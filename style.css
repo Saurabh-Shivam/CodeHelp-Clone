@@ -180,7 +180,7 @@ body {
   z-index: 1;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,11 +188,11 @@ body {
   cursor: pointer;
 }
 
-.logoName{
+.logoName {
   text-transform: uppercase;
 }
 
-.logoName span{
+.logoName span {
   color: var(--violet);
 }
 
@@ -217,6 +217,78 @@ body {
 .navItems a:hover {
   color: var(--violet);
   transition: 0.2s;
+}
+
+/* .navItems a:nth-child(3) + .mainLabContainer {
+  color: var(--violet);
+  display: block;
+  transition: 0.2s;
+} */
+
+#labTag:hover + #mainLabContainer {
+  opacity: 1;
+}
+
+/* Navbar Hover Div */
+#mainLabContainer {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  margin-left: 33rem;
+  margin-top: -12px;
+  /* opacity: 0.0;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; */
+}
+
+.labContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--bgColor);
+  width: max-content;
+  padding: 7px 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.labHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.labHead h2 {
+  font-size: 20px;
+}
+
+.labHead h4 {
+  font-size: 12px;
+  background-color: #f5d8fd;
+  padding: 7px;
+  padding-left: 15px;
+  border-radius: 999px;
+  color: #8b5fac;
+  width: 50px;
+  height: 10px;
+}
+
+.labPart2 h4 {
+  background-color: #fcf2a0;
+  color: #ba985c;
+  width: 40px;
+  height: 10px;
+}
+
+.labText p {
+  font-size: 15px;
+  width: 300px;
+  margin-top: 10px;
+  padding: 2px;
+  color: var(--lightBlack);
 }
 
 .navAllBtns {
@@ -532,4 +604,585 @@ body {
   padding: 0 15px 0 15px;
   color: var(--lightBlack);
   font-size: 16px;
+}
+
+/* Instrtuctor Details */
+.detailContainer {
+  margin: 0;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+  /* for line at the end of section */
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #c7c9cd 25%, transparent 50%) 100% 1;
+}
+
+.detailHead {
+  padding-bottom: 1.5rem;
+  margin-left: 3rem;
+  width: 100%;
+  display: flex;
+  gap: 36rem;
+  position: relative;
+  border-bottom: 1px solid #babcc1;
+}
+
+.headText {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.headText span {
+  color: var(--violet);
+}
+
+.instructor {
+  margin-top: -3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  -webkit-animation: fadeIn ease 5s, entryDowUp 4.3s alternate;
+  animation: fadeIn ease 5s, entryDownUp 4.3s alternate;
+}
+
+.instImg img {
+  width: 250px;
+  border-radius: 100%;
+}
+
+.instName {
+  font-size: 28px;
+  font-weight: 750;
+  padding-top: 4px;
+}
+
+.instPost {
+  font-size: 24px;
+  color: var(--lightBlack);
+}
+
+.instWorks {
+  margin: 0 4rem 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10rem;
+  -webkit-animation: fadeIn ease 5s, entryDowUp 4.3s alternate;
+  animation: fadeIn ease 5s, entryDownUp 4.3s alternate;
+  margin-bottom: 4rem;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  color: var(--lightBlack);
+}
+
+/* Placement Stats Section */
+.statsContainer {
+  margin: 5rem;
+  padding: 2rem;
+  display: flex;
+  gap: 5rem;
+  position: relative;
+}
+
+.statsLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  padding-right: 0;
+  position: relative;
+  height: max-content;
+  left: 3rem;
+}
+
+.statsLeft span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--violet);
+}
+
+.statsLeft h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  padding-top: 12px;
+  width: 330px;
+}
+
+.statsLeft h3 {
+  font-size: 22px;
+  color: var(--lightBlack);
+  font-weight: 100;
+  padding-top: 1rem;
+}
+
+.statsRight {
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  left: 8rem;
+}
+
+.mainWhite {
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  background-color: var(--white);
+  box-shadow: 0 1.5px 0 rgba(223, 220, 220, 0.4);
+  position: relative;
+  animation: myrotation 44s infinite linear;
+}
+
+.purple {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: #f1e4ff;
+  position: relative;
+  top: 2.3rem;
+  left: 2.2rem;
+}
+
+.innerWhite {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: var(--white);
+  position: relative;
+  top: 3rem;
+  left: 3rem;
+  /* animation: myrotationRev 44s infinite ; */
+}
+
+.compIcons {
+  /* border: 1px solid var(--bgColor); */
+  width: max-content;
+  border-radius: 100%;
+  position: fixed;
+}
+
+/* icons on inside center white circle */
+.comp1 {
+  transform: translateX(-12px) translateY(55px);
+}
+.comp2 {
+  transform: translateX(55px) translateY(-15px);
+}
+.comp3 {
+  transform: translateX(130px) translateY(55px);
+}
+.comp4 {
+  transform: translateX(50px) translateY(125px);
+}
+/* icons on outside circle */
+.comp5 {
+  transform: translateX(215px) translateY(60px);
+}
+.comp6 {
+  transform: translateX(-25px) translateY(-80px);
+}
+.comp7 {
+  transform: translateX(170px) translateY(-65px);
+}
+.comp8 {
+  transform: translateX(-45px) translateY(180px);
+}
+.comp9 {
+  transform: translateX(-100px) translateY(60px);
+}
+.comp10 {
+  transform: translateX(150px) translateY(190px);
+}
+
+/* Courses Section */
+.courseContainer {
+  padding: 0 10rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgColor);
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.container1:first-child {
+  border-bottom: 1px solid black;
+}
+
+.courseHead {
+  font-size: 22px;
+  padding: 0;
+  width: max-content;
+}
+
+.courseHead span {
+  color: var(--violet);
+}
+
+.courseCard {
+  display: flex;
+  padding: 3rem;
+  padding-top: 10px;
+  justify-content: space-around;
+  gap: 15rem;
+  width: max-content;
+}
+
+.batchCard {
+  width: 380px;
+  height: 380px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.batchCard:hover {
+  cursor: pointer;
+  box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.batchImg img {
+  border-radius: 15px;
+}
+
+.batchName {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+.priceArea {
+  display: flex;
+  margin-left: -9rem;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.coursePrice {
+  color: var(--violet);
+}
+
+.mainPrice {
+  color: var(--lightBlack);
+  text-decoration-line: line-through;
+}
+
+.discount {
+  background-color: #1dd1a1;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 3px 2px 3px;
+  width: 70px;
+  height: 25px;
+  border-radius: 6px;
+}
+
+/* Testimonial Section */
+.testimonialContainer {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 4.5rem;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  /* for line at the end of section */
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to left, #c7c9cd 40%, transparent 0%) 100% 1;
+}
+
+.testiHead {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #f0f3ff;
+  width: 1250px;
+  padding: 1rem 0 3rem 0;
+  margin: 0 2rem 0 2rem;
+}
+
+.txtPart {
+  position: relative;
+  /* left: -8rem; */
+}
+
+.txtPart h2 {
+  color: var(--violet);
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.txtPart h1 {
+  text-transform: capitalize;
+  padding-top: 5px;
+  font-size: 2.7rem;
+}
+
+.btnPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  /* left: 7rem; */
+}
+
+.arrowBtn {
+  height: 12px;
+  font-size: large;
+  border-radius: 999px;
+}
+
+.leftBtn {
+  border: 1px solid var(--bgColor);
+  background-color: #ededed;
+}
+
+.testiCardContainer {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.testiCard {
+  width: 400px;
+  height: 260px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.courseCardReview {
+  color: var(--lightBlack);
+  font-size: 16px;
+  padding-left: 1rem;
+}
+
+.info_star {
+  display: flex;
+  gap: 5rem;
+}
+
+.reviwerInfo {
+  display: flex;
+  gap: 15px;
+}
+
+.reviewerImg img {
+  width: 50px;
+}
+
+.reviewerName {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewerName h4 {
+  font-size: 14px;
+}
+
+.reviewerName h5 {
+  font-size: 12px;
+  color: var(--lightBlack);
+}
+
+/* Community Section */
+.communityContainer {
+  margin: 3rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.communityHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 580px;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.communityHead h1 {
+  font-size: 42px;
+}
+
+.communityHead h3 {
+  width: 100%;
+  font-size: 20px;
+  color: var(--lightBlack);
+}
+
+.socialLinksContainer {
+  display: flex;
+  gap: 5rem;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.linkImg img {
+  width: 65px;
+}
+
+.linkName {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
+}
+
+/* Footer Section */
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--violet);
+  padding: 0rem 2rem 2rem 4rem;
+  color: var(--white);
+  gap: 5rem;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #7985d2;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  gap: 10rem;
+}
+
+.fleft {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 5px;
+  padding-left: 3rem;
+}
+
+.fleftImg img {
+  position: relative;
+  left: 2rem;
+  width: 70px;
+  /* changing image color to white */
+  filter: brightness(0) invert(1);
+  cursor: default;
+}
+
+.fleftTxt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 15px;
+}
+
+.fleftTxt h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.fleftTxt p {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.fmiddle {
+  padding: 2rem;
+  display: flex;
+  gap: 4.5rem;
+  list-style: none;
+  border-right: 1px solid #7985d2;
+  width: 350px;
+}
+
+.fItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: capitalize;
+}
+
+.fItems li {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fItems h4 {
+  margin: 0 0 1rem;
+}
+
+.fIt1 {
+  width: 200px;
+  height: 168px;
+}
+
+.fIt2 {
+  width: 600px;
+  height: 160px;
+}
+
+.fRight {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8rem;
+  padding-left: 3rem;
+  width: 100px;
+  position: relative;
+  left: -4rem;
+}
+
+.fRight h3 {
+  width: 280px;
+  height: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+
+.fRight p {
+  font-size: 16px;
+  width: 280px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.copyrightPart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: -3rem;
+  padding: 0 0 10px;
 }
