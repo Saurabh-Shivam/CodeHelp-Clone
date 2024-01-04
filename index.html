@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>LearnIt</title>
+    <title>Home - CodeHelp</title>
   </head>
   <body>
     <div class="main">
@@ -14,52 +14,71 @@
       </div>
 
       <!-- Navbar -->
-      <div class="navContainer">
-        <div class="logo">
-          <a href=""><img src="assets/logo.png" alt="logo" /></a>
-          <h2 class="logoName">Code <span>Help</span></h2>
+      <div class="navbarContainer">
+        <!-- Top Notification Bar -->
+        <div class="notificationBar">
+          <p class="notifiText">
+            Hurry Up !!<span> 1st </span> Lecture of <span> SUPRA </span> Batch
+            starts in <span> 12 days</span>
+          </p>
+          <i class="cross fa-solid fa-x"></i>
         </div>
 
-        <div class="navItems">
-          <li><a href="">about us</a></li>
-          <li><a href="">courses</a></li>
-          <li id="labTag">
-            <a href="">labs <i class="fa-solid fa-angle-down"></i></a>
-          </li>
-          <li><a href="">contact</a></li>
-        </div>
-
-        <div class="navAllBtns">
-          <button class="btn whiteBtn">Dashboard</button>
-          <button class="btn blueBtn">
-            Login <i class="fa-solid fa-right-to-bracket"></i>
-          </button>
-          <i class="modeBtn fa-solid fa-moon"></i>
-        </div>
-      </div>
-
-      <!--  Navbar Hover Div  -->
-      <div id="mainLabContainer">
-        <div class="labContainer">
-          <div class="labPart1">
-            <div class="labHead">
-              <h2>Fruitbox Flex</h2>
-              <h4>Popular</h4>
-            </div>
-            <div class="labText">
-              <p>
-                A fun and interactive way to sharpen your Flexbox CSS skills.
-              </p>
-            </div>
+        <div class="navBar">
+          <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+            <a href="index.html">
+              <h2 class="logoName">Code <span>Help</span></h2>
+            </a>
           </div>
-          <div class="labPart2">
-            <div class="labHead">
-              <h2>Quick Compiler</h2>
-              <h4>Beta</h4>
-            </div>
-            <div class="labText">
-              <p>Write and run code in multiple languages from anywhere.</p>
-            </div>
+
+          <div class="navItems">
+            <li><a href="about.html">about us</a></li>
+            <li><a href="#courses">courses</a></li>
+            <li id="labTag">
+              <a target="_blank" href="https://labs.thecodehelp.in/quick-compiler"
+                >labs <i class="fa-solid fa-angle-down"></i>
+
+                <!--  Navbar Hover Div  -->
+                <div id="mainLabContainer">
+                  <div class="labContainer">
+                    <div class="labPart1">
+                      <div class="labHead">
+                        <h2>Fruitbox Flex</h2>
+                        <h4>Popular</h4>
+                      </div>
+                      <div class="labText">
+                        <p>
+                          A fun and interactive way to sharpen your Flexbox CSS
+                          skills.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="labPart2">
+                      <div class="labHead">
+                        <h2>Quick Compiler</h2>
+                        <h4>Beta</h4>
+                      </div>
+                      <div class="labText">
+                        <p>
+                          Write and run code in multiple languages from
+                          anywhere.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li><a href="contact.html">contact</a></li>
+          </div>
+
+          <div class="navAllBtns">
+            <button class="btn whiteBtn">Dashboard</button>
+            <button class="btn blueBtn">
+              Login <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+            <i class="modeBtn fa-solid fa-moon"></i>
           </div>
         </div>
       </div>
@@ -117,7 +136,11 @@
           <h1>900K+</h1>
           <h3 class="socialName">
             Subscribers <br />
-            <a href="">on Youtube</a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCldyi11QYNXYXiLjVbyw5dA"
+              >on Youtube</a
+            >
           </h3>
         </div>
 
@@ -125,7 +148,9 @@
           <h1>4K+</h1>
           <h3 class="socialName">
             Subscribers <br />
-            <a href="">on Twitter</a>
+            <a target="_blank" href="https://twitter.com/lovebabbar3"
+              >on Twitter</a
+            >
           </h3>
         </div>
 
@@ -133,7 +158,9 @@
           <h1>100K+</h1>
           <h3 class="socialName">
             Subscribers <br />
-            <a href="">on Instagram</a>
+            <a target="_blank" href="https://www.instagram.com/lovebabbar1/"
+              >on Instagram</a
+            >
           </h3>
         </div>
 
@@ -141,7 +168,11 @@
           <h1>410K+</h1>
           <h3 class="socialName">
             Subscribers <br />
-            <a href="">on Linkedin</a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/love-babbar-38ab2887/"
+              >on Linkedin</a
+            >
           </h3>
         </div>
       </div>
@@ -411,7 +442,7 @@
       </div>
 
       <!-- Courses Section -->
-      <div class="courseContainer">
+      <div class="courseContainer" id="courses">
         <div class="container1">
           <div class="courseHead">
             <h1>What would you like to <span>learn?</span></h1>
@@ -859,10 +890,10 @@
           <div class="fmiddle">
             <div class="fItems fIt1">
               <h4>menu</h4>
-              <li>about us</li>
-              <li>courses</li>
-              <li>labs</li>
-              <li>contact</li>
+              <li><a href="about.html">about us</a></li>
+              <li><a href="#courses">courses</a></li>
+              <li><a target="_blank" href="https://labs.thecodehelp.in/quick-compiler">labs</a></li>
+              <li><a href="contact.html">contact</a></li>
             </div>
             <div class="fItems fIt2">
               <h4>services</h4>
