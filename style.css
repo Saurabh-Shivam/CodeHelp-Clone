@@ -198,12 +198,19 @@ body {
 }
 
 .notificationBar i {
+  font-size: 18px;
   width: 28px;
   height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.cross {
+  color: inherit;
+  background-color: inherit;
+  border: none;
 }
 
 .navBar {
@@ -400,7 +407,7 @@ body {
 }
 
 .heroHead {
-  font-size: 28px;
+  font-size: 26px;
   color: #363a45;
 }
 
@@ -408,7 +415,7 @@ body {
   font-weight: 800;
 }
 
-.heroHead span {
+.heroHead span:first-child {
   color: var(--violet);
 }
 
@@ -518,11 +525,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  font-size: 1.5rem;
+  font-size: 24px;
   border-right: 1px solid var(--white);
   width: 100%;
   padding: 4px;
   align-items: center;
+}
+
+.counting {
+  font-size: 24px;
+  display: flex;
 }
 
 .followerSec:nth-child(4) {

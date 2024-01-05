@@ -21,7 +21,9 @@
             Hurry Up !!<span> 1st </span> Lecture of <span> SUPRA </span> Batch
             starts in <span> 12 days</span>
           </p>
-          <i class="cross fa-solid fa-x"></i>
+          <button onclick="handleHide()" class="cross">
+            <i class="fa-solid fa-x"></i>
+          </button>
         </div>
 
         <div class="navBar">
@@ -40,7 +42,6 @@
                 target="_blank"
                 href="https://labs.thecodehelp.in/quick-compiler"
                 >labs <i class="fa-solid fa-angle-down"></i>
-
                 <!--  Navbar Hover Div  -->
                 <div id="mainLabContainer">
                   <div class="labContainer">
@@ -76,8 +77,16 @@
           </div>
 
           <div class="navAllBtns">
-            <button class="btn whiteBtn">Dashboard</button>
-            <button class="btn blueBtn">
+            <button
+              onclick="window.open('https://learn.thecodehelp.in/s/dashboard', '_blank')"
+              class="btn whiteBtn"
+            >
+              Dashboard
+            </button>
+            <button
+              onclick="window.open('https://learn.thecodehelp.in/s/dashboard', '_blank')"
+              class="btn blueBtn"
+            >
               Login <i class="fa-solid fa-right-to-bracket"></i>
             </button>
             <i class="modeBtn fa-solid fa-moon"></i>
