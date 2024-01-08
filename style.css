@@ -277,25 +277,28 @@ body {
   display: block;
   transition: 0.2s;
 } */
-
+/* 
 #labTag:hover + #mainLabContainer {
   opacity: 1;
-}
+} */
 
 /* Navbar Hover Div */
-#mainLabContainer {
-  /* display: block; */
-  display: none;
+.mainLabContainer {
+  scale: 0;
   position: fixed;
   z-index: 1;
-  margin-left: -9rem;
-  margin-top: 1.8rem;
-  /* opacity: 0;
+  margin-left: 35rem;
+  margin-top: -0.5rem;
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
   -ms-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out; */
+  transition: all 500ms ease-in-out; 
+}
+
+.active{
+  scale: 1;
+  display: block;
 }
 
 .labContainer {
